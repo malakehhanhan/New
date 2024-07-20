@@ -1,7 +1,8 @@
+ #---------------------------------------------------------------------
+#  GitHub Action Basics
+#  
 #---------------------------------------------------------------------
-first simple git action 
-#---------------------------------------------------------------------
-name: SImple_Pipeline
+name: My-GitHubActions-Basics
 
 on: 
   push:
@@ -9,11 +10,9 @@ on:
       - master
 
 jobs:
-  my_job 1:
-    runs-on: ubuntu
+  my_first_job:
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Print Hello world
-      run : echo "Hello World !!!"
-    
-    
+    - name: Print Hello Message in First Job
+      run : echo "Hello World from First job"
