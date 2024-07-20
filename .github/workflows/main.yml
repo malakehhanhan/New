@@ -1,0 +1,19 @@
+#---------------------------------------------------------------------
+First GitHub Action Basics
+#---------------------------------------------------------------------
+name: SImple_Pipeline
+
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+  my_job 1:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print Hello world
+      run : echo "Hello World !!!"
+    
+    
