@@ -6,11 +6,11 @@ name: SImple_Pipeline
 on: 
   push:
     branches: 
-      - main
+      - master
 
 jobs:
   my_job 1:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu
 
     steps:
     - name: Print Hello world
