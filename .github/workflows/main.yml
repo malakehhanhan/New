@@ -6,7 +6,7 @@ name: SImple_Pipeline
 on: 
   push:
     branches: 
-      - master
+      - main
 
 jobs:
   my_job 1:
